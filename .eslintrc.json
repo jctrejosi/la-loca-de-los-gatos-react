@@ -3,6 +3,13 @@
     "browser": true,
     "es2021": true
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   "extends": [
     "plugin:react/recommended",
     "airbnb",
@@ -20,10 +27,11 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".tsx"]
+        "extensions": [".tsx"]
       }
     ],
     "react/react-in-jsx-scope": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}]
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}],
+    "import/extensions": "off"
   }
 }
