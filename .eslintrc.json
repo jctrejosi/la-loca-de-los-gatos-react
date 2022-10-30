@@ -1,11 +1,18 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2022": true
   },
   "settings": {
     "import/resolver": {
       "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "alias": {
+        "map": [
+          ["@","./src"],
+          ["#","./src/components"]
+        ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
