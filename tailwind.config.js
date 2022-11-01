@@ -35,6 +35,12 @@ module.exports = {
       main: ["Agrandir-Narrow"],
       custom: ["Josefin-Slab"],
     },
+    screens: {
+      sm: "489px",
+      md: "769px",
+      lg: "1025px",
+      xl: "1250px",
+    },
   },
   plugins: [],
 };
