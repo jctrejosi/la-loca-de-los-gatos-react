@@ -2,11 +2,11 @@ import { ReactElement, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import type { itemNavbar } from "./types";
 
-interface propsItem {
+interface props {
   item: itemNavbar;
 }
 
-function ItemNavbar({ item }: propsItem): ReactElement {
+function ItemNavbar({ item }: props): ReactElement {
   let itemDiv;
 
   if (item.dropdown) {

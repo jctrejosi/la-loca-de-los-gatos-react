@@ -1,7 +1,12 @@
 import logoSvg from "@/assets/images/logo.svg";
 
+export const web = "/";
+
+export const logo = logoSvg;
+
+export const slogan = "la loca de los gatos";
+
 export const navbarlist = [
-  { text: "Nosotros", route: "/nosotros" },
   {
     text: "Adopta",
     dropdown: [
@@ -11,13 +16,8 @@ export const navbarlist = [
     ],
   },
   { text: "Blog", route: "/blog" },
+  { text: "Nosotros", route: "/nosotros" },
   { text: "Contacto", route: "/contacto" },
 ];
-
-export const web = import.meta.env.VITE_SERVER;
-
-export const logo = logoSvg;
-
-export const slogan = "la loca de los gatos";
 
 export default null;

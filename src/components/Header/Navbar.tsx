@@ -3,11 +3,11 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import ItemNavbar from "./ItemNavbar";
 import type { itemNavbar } from "./types";
 
-interface propsNavbar {
+interface props {
   list: itemNavbar[];
 }
 
-function Navbar({ list }: propsNavbar): ReactElement {
+function Navbar({ list }: props): ReactElement {
   const items = list.map((item) => <ItemNavbar key={item.text} item={item} />);
 
   const [showDropdown, setShow] = useState(false);
