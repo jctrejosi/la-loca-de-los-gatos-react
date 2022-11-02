@@ -1,5 +1,10 @@
 import { ReactElement } from "react";
-import type { iconProps } from "./types";
+
+interface iconProps {
+  url: string;
+  image: string;
+  slogan: string;
+}
 
 function Icon({ url, image, slogan }: iconProps): ReactElement {
   return (
