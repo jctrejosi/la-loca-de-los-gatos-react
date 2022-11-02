@@ -23,7 +23,8 @@ module.exports = {
       "custom-color": "#F28095",
       "extra-color": "#F2D0A7",
       "purple-color": "#A37EF2",
-      "gray-color": "#F2F2F2",
+      "gray-color": "#EEF0EB",
+      "blue-color": "#A2D2FF",
 
       // -------- base backgrounds colors --------
 
