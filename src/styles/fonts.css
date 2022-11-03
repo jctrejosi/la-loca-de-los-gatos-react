@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Agrandir-Narrow';
-  src: local('sans'), url(../assets/fonts/AgrandirNarrow.ttf) format('truetype');
+  font-family: "Agrandir-Narrow";
+  src: local("sans"), url(../assets/fonts/AgrandirNarrow.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Josefin-Slab';
-  src: local('sans'), url(../assets/fonts/JosefinSlab.ttf) format('truetype');
+  font-family: "Josefin-Slab";
+  src: local("sans"), url(../assets/fonts/JosefinSlab.ttf) format("truetype");
 }
