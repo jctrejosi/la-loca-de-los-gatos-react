@@ -10,8 +10,9 @@
       },
       "alias": {
         "map": [
-          ["@","./src"],
-          ["#","./src/components"]
+          ["@", "./src"],
+          ["#", "./src/components"],
+          ["contents", "./src/contents"]
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
@@ -38,7 +39,14 @@
       }
     ],
     "react/react-in-jsx-scope": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
     "import/extensions": "off"
   }
 }

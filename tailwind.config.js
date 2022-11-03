@@ -21,9 +21,11 @@ module.exports = {
 
       "main-color": "#C7B3F2",
       "custom-color": "#F28095",
-      "extra-color": "#F2D0A7",
+      "yellow-color": "#F2D0A7",
+      "yellow-color-hover": "#EAC497",
       "purple-color": "#A37EF2",
-      "gray-color": "#F2F2F2",
+      "gray-color": "#EEF0EB",
+      "blue-color": "#A2D2FF",
 
       // -------- base backgrounds colors --------
 
