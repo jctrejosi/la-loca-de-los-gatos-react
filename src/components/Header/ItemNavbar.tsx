@@ -1,4 +1,5 @@
 import { ReactElement, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import type { itemNavbar } from "./types";
 
@@ -17,12 +18,12 @@ function ItemNavbar({ item }: props): ReactElement {
         className="block hover:bg-yellow-color-hover cursor-pointer transition-all duration-150 border-b-[.01rem] border-b- last:border-b-0 hover:underline"
         key={option.text}
       >
-        <a
-          href={option.url || option.route || "/"}
+        <NavLink
+          to={option.route || "/"}
           className="block mx-5 font-custom font-bold text-lg"
         >
           {option.text}
-        </a>
+        </NavLink>
       </li>
     ));
 
@@ -49,12 +50,12 @@ function ItemNavbar({ item }: props): ReactElement {
     );
   } else {
     itemDiv = (
-      <a
-        href={`${item.url || item.route || "/"}`}
+      <NavLink
+        to={item.route || "/"}
         className="font-custom text-lg font-bold cursor-pointer transition-all duration-150 hover:text-custom-color hover:underline hover:bg-light-color px-4 py-[4.5rem]"
       >
         {item.text}
-      </a>
+      </NavLink>
     );
   }
 
