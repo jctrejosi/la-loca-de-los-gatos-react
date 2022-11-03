@@ -20,6 +20,8 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "airbnb",
     "plugin:prettier/recommended"
   ],
@@ -28,6 +30,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
+    "sourceType": "module",
     "ecmaVersion": "latest"
   },
   "plugins": ["react", "@typescript-eslint"],
@@ -47,6 +50,7 @@
         "peerDependencies": true
       }
     ],
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "@typescript-eslint/no-explicit-any": "error"
   }
 }
