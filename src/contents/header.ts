@@ -15,9 +15,9 @@ export const navbarlist = [
       { text: "Casos exitosos", route: "/casos" },
     ],
   },
-  { text: "Blog", route: "/blog" },
   { text: "Nosotros", route: "/nosotros" },
   { text: "Contacto", route: "/contacto" },
+  { text: "Blog", route: "/blog" },
 ];
 
 export default null;

@@ -41,7 +41,7 @@ function ItemNavbar({ item }: props): ReactElement {
           <ChevronDownIcon className="h-4 w-4 ml-1" />
         </button>
         <ul
-          className={`absolute w-full block right-0 overflow-hidden bg-yellow-color transition-all duration-300 rounded-sm ${
+          className={`relative md:absolute w-full block right-0 overflow-hidden bg-yellow-color transition-all duration-300 rounded-sm ${
             openDropdown ? "max-h-full" : "max-h-0"
           }`}
           onMouseEnter={() => showDropdown(true)}
@@ -62,7 +62,11 @@ function ItemNavbar({ item }: props): ReactElement {
     );
   }
 
-  return <li className="mx-2 my-1 w-full">{itemDiv}</li>;
+  return (
+    <li className="mx-2 my-1 first:my-0 md:my-0 w-full first:bg-blue-color">
+      {itemDiv}
+    </li>
+  );
 }
 
 export default ItemNavbar;

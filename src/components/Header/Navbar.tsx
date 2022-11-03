@@ -21,7 +21,7 @@ function Navbar({ list }: props): ReactElement {
       />
       <ul
         className={`flex absolute flex-col w-full items-center max-w-full translate-y-16 right-0 bg-secondary md:translate-y-0
-        md:top-auto md:right-auto md:bg-[transparent] md:flex md:flex-row md:relative ${
+        top-16 md:top-auto md:right-auto md:bg-[transparent] md:flex md:flex-row md:relative ${
           showDropdown ? "flex" : "hidden"
         }`}
       >
