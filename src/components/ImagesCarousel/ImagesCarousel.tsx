@@ -12,8 +12,8 @@ function ImagesCarousel({ images }: props): ReactElement {
     <img
       key={item}
       src={item}
-      alt="imagen-promocional object-cover"
-      className="w-full h-full"
+      alt="imagen-promocional"
+      className="w-full h-full object-cover"
     />
   ));
   return (
