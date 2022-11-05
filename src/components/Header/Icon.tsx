@@ -9,7 +9,7 @@ interface props {
 function Icon({ url, image, slogan }: props): ReactElement {
   return (
     <a href={url} className="flex items-center">
-      <img className="max-w-[8rem]" alt="imagen" src={image} />
+      <img className="max-w-[8rem] hover:opacity-60" alt="imagen" src={image} />
       <p className="font-custom text-xl max-w-md">{slogan}</p>
     </a>
   );

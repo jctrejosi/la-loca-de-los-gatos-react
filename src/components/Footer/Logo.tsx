@@ -10,8 +10,12 @@ interface props {
 function Logo({ logo, url, paragraph }: props): ReactElement {
   return (
     <div>
-      <NavLink to={url}>
-        <img src={logo} alt="Logo de la compañía" className="max-w-[5rem]" />
+      <NavLink to={url} className="justify-center flex mb-2">
+        <img
+          src={logo}
+          alt="Logo de la compañía"
+          className="max-w-[8rem] hover:opacity-60 relative z-10"
+        />
       </NavLink>
       <p className="font-custom">{paragraph}</p>
     </div>
