@@ -26,7 +26,7 @@ function Footer({
   titleAllieds,
 }: props): ReactElement {
   return (
-    <footer className="bg-circle bg-center bg-fixed bg-cover grid grid-cols-3 p-8 gap-x-4">
+    <footer className="bg-circle bg-center bg-fixed bg-cover grid grid-cols-1 md:grid-cols-3 p-8 gap-4">
       <Logo logo={logo} url={route} paragraph={paragraph} />
       <div>
         <Icons icons={iconsSocial} title={titleSocial} sizeIcons="w-[3rem]" />

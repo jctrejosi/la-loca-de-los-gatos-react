@@ -38,7 +38,8 @@ module.exports = {
       custom: ["Josefin-Slab"],
     },
     screens: {
-      sm: "489px",
+      xs: "489px",
+      sm: "569px",
       md: "769px",
       lg: "1025px",
       xl: "1250px",
