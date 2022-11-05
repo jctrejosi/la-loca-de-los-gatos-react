@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { navbarlist, web, logo, slogan } from "contents/header";
+import { navbarlist, web, logoHeader, slogan } from "contents/header";
+import { listLinks, url, logoFooter, description } from "contents/footer";
 import Header from "#/Header/Header";
 import Footer from "#/Footer/Footer";
 import Home from "./pages/Home";
@@ -14,7 +15,7 @@ import Requisitos from "./pages/Requisitos";
 function routes() {
   return (
     <BrowserRouter>
-      <Header url={web} image={logo} slogan={slogan} items={navbarlist} />
+      <Header url={web} image={logoHeader} slogan={slogan} items={navbarlist} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
@@ -25,7 +26,12 @@ function routes() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/requisitos" element={<Requisitos />} />
       </Routes>
-      <Footer />
+      <Footer
+        linkList={listLinks}
+        route={url}
+        logo={logoFooter}
+        paragraph={description}
+      />
     </BrowserRouter>
   );
 }
