@@ -12,7 +12,7 @@ interface props {
 
 function Header({ url, image, slogan, items }: props): ReactElement {
   return (
-    <header className="bg-primary flex justify-between lg:justify-around px-8 items-center">
+    <header className="bg-circle bg-center bg-fixed bg-cover flex justify-between lg:justify-around px-8 items-center">
       <Icon url={url} image={image} slogan={slogan} />
       <Navbar list={items} />
     </header>
