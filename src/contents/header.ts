@@ -2,7 +2,7 @@ import logoSvg from "@/assets/images/logo.svg";
 
 export const web = "/";
 
-export const logo = logoSvg;
+export const logoHeader = logoSvg;
 
 export const slogan = "la loca de los gatos";
 
