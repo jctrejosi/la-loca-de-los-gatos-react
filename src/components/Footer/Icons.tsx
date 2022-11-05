@@ -20,7 +20,7 @@ function Icons({ icons, title, sizeIcons }: props): ReactElement {
         className="flex items-center"
       >
         <img
-          className={`${sizeIcons}`}
+          className={`${sizeIcons} hover:opacity-50 hover:border border-custom-color rounded-xl transition-all duration-150`}
           alt="icono-red-social-externa"
           src={item.image}
         />

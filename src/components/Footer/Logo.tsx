@@ -14,7 +14,7 @@ function Logo({ logo, url, paragraph }: props): ReactElement {
         <img
           src={logo}
           alt="Logo de la compañía"
-          className="max-w-[8rem] hover:opacity-60 relative z-10"
+          className="max-w-[8rem] hover:opacity-60 hover:border border-blue-color rounded-xl transition-all duration-150 relative z-10"
         />
       </NavLink>
       <p className="font-custom">{paragraph}</p>
