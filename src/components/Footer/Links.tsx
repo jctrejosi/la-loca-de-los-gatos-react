@@ -8,7 +8,7 @@ interface props {
 
 function Links({ list }: props): ReactElement {
   const listDiv = list.map((item) => (
-    <li>
+    <li key={item.text}>
       <NavLink
         to={item.route}
         className="font-custom hover:underline hover:text-custom-color"
