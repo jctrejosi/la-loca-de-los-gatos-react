@@ -1,0 +1,13 @@
+.linkDefault {
+  background-color: var(--main-color);
+  border-radius: .3rem;
+  color: var(--light-color);
+  font: 1rem var(--main-font);
+  padding: 1rem 2rem;
+  transition: all .3s;
+}
+
+.linkDefault:hover {
+  background-color: var(--custom-color);
+  text-decoration: underline;
+}
