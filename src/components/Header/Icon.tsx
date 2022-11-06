@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import { NavLink } from "react-router-dom";
 
 interface props {
   url: string;
@@ -8,14 +9,14 @@ interface props {
 
 function Icon({ url, image, slogan }: props): ReactElement {
   return (
-    <a href={url} className="flex items-center">
+    <NavLink to={url} className="flex items-center">
       <img
         className="max-w-[8rem] hover:opacity-60 hover:border border-blue-color rounded-xl transition-all duration-150"
         alt="imagen"
         src={image}
       />
       <p className="font-custom text-xl max-w-md">{slogan}</p>
-    </a>
+    </NavLink>
   );
 }
 
