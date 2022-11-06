@@ -20,7 +20,7 @@ function ItemNavbar({ item }: props): ReactElement {
       >
         <NavLink
           to={option.route || "/"}
-          className="block mx-5 font-custom font-bold text-lg"
+          className="block mx-5 font-custom font-bold text-lg py-2"
         >
           {option.text}
         </NavLink>
