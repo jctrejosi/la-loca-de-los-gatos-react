@@ -17,7 +17,7 @@ function Logo({ logo, url, paragraph }: props): ReactElement {
           className="max-w-[8rem] hover:opacity-60 hover:border border-blue-color rounded-xl transition-all duration-150 relative z-10"
         />
       </NavLink>
-      <p className="font-custom">{paragraph}</p>
+      <p className="p-base">{paragraph}</p>
     </div>
   );
 }
