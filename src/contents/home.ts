@@ -44,4 +44,6 @@ export const itemsBox = [
   },
 ];
 
+export const titleOptionsBox = "Adopta o apadrina uno de estos peluditos";
+
 export default null;
