@@ -16,7 +16,7 @@
 }
 
 .link-default {
-  background-color: var(--custom-color);
+  background-color: var(--yellow-color);
   border-radius: 0.3rem;
   color: var(--light-color);
   font: 1rem var(--main-font);
@@ -26,7 +26,7 @@
 }
 
 .link-default:hover {
-  background-color: var(--purple-color);
+  background-color: var(--custom-color);
   text-decoration: underline;
 }
 
