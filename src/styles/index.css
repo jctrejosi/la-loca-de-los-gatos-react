@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 @import "./fonts.css";
-@import "./variables.css";
-@import "./class.css";
 
 @tailwind base;
 @tailwind components;

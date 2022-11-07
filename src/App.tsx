@@ -1,10 +1,18 @@
-import { ReactElement } from "react";
-import Routes from "./routes";
+import Header from "#/Header/Header";
+import Footer from "#/Footer/Footer";
+import logoSvg from "./assets/images/logo.svg";
 
-function App(): ReactElement {
+const web = import.meta.env.VITE_SERVER;
+
+const logo = logoSvg;
+
+const slogan = "la loca de los gatos";
+
+function App() {
   return (
     <div className="App">
-      <Routes />
+      <Header url={web} image={logo} slogan={slogan} />
+      <Footer />
     </div>
   );
 }
