@@ -7,10 +7,11 @@ import type { item } from "./types";
 interface props {
   listItems: item[];
   title: string;
+  limit: number;
 }
 
-function OptionsBox({ listItems, title }: props): ReactElement {
-  const items = listItems.slice(0, 6).map((option) => (
+function OptionsBox({ listItems, title, limit }: props): ReactElement {
+  const items = listItems.slice(0, limit).map((option) => (
     <li key={option.id} className="px-8 w-[33%] min-w-[25rem] mb-16">
       <ItemBox
         id={option.id}
