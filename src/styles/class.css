@@ -32,6 +32,20 @@
 
 /* ------------- Texts ------------- */
 
+.title-base {
+  color: var(--purple-color);
+  font: 1.6rem var(--main-font);
+  font-weight: bold;
+  text-align: left;
+  text-transform: lowercase;
+}
+
+.title-base::first-letter {
+  text-transform: uppercase;
+}
+
+
+
 .title-base-inner {
   color: var(--purple-color);
   font: 1.2rem var(--main-font);

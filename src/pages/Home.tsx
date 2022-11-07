@@ -1,13 +1,13 @@
 import { ReactElement } from "react";
 import ImagesCarousel from "#/ImagesCarousel/ImagesCarousel";
 import OptionsBox from "#/OptionsBox/OptionsBox";
-import { imagesCarousel, itemsBox } from "contents/home";
+import { imagesCarousel, itemsBox, titleOptionsBox } from "contents/home";
 
 function Home(): ReactElement {
   return (
     <div>
       <ImagesCarousel images={imagesCarousel} />
-      <OptionsBox listItems={itemsBox} />
+      <OptionsBox listItems={itemsBox} title={titleOptionsBox} />
     </div>
   );
 }
