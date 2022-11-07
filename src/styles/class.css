@@ -1,7 +1,7 @@
 /* ------------- Buttons ------------- */
 
 .btn-secondary {
-  background-color: var(--yellow-color-hover) !important;
+  background-color: var(--main-color) !important;
   border-radius: 0.3rem;
   color: var(--light-color);
   font: 1rem var(--main-font);
@@ -16,7 +16,7 @@
 }
 
 .link-default {
-  background-color: var(--main-color);
+  background-color: var(--custom-color);
   border-radius: 0.3rem;
   color: var(--light-color);
   font: 1rem var(--main-font);
@@ -26,14 +26,14 @@
 }
 
 .link-default:hover {
-  background-color: var(--custom-color);
+  background-color: var(--purple-color);
   text-decoration: underline;
 }
 
 /* ------------- Texts ------------- */
 
 .title-base-inner {
-  color: var(--blue-color);
+  color: var(--purple-color);
   font: 1.2rem var(--main-font);
   font-weight: 600;
   text-align: left;

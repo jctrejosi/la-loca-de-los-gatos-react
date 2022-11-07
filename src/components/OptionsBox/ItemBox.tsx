@@ -5,7 +5,11 @@ import type { item } from "./types";
 function ItemBox({ description, image, name, id }: item): ReactElement {
   return (
     <div className="text-left">
-      <img src={image} alt="imagen de mascota" className="w-full" />
+      <img
+        src={image}
+        alt="imagen de mascota"
+        className="w-full object-cover"
+      />
       <h1 className="title-base-inner mt-4">
         {name}
         {id}
