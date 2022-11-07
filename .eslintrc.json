@@ -10,8 +10,9 @@
       },
       "alias": {
         "map": [
-          ["@","./src"],
-          ["#","./src/components"]
+          ["@", "./src"],
+          ["#", "./src/components"],
+          ["contents", "./src/contents"]
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
@@ -19,6 +20,8 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "airbnb",
     "plugin:prettier/recommended"
   ],
@@ -27,6 +30,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
+    "sourceType": "module",
     "ecmaVersion": "latest"
   },
   "plugins": ["react", "@typescript-eslint"],
@@ -38,7 +42,16 @@
       }
     ],
     "react/react-in-jsx-scope": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true, "optionalDependencies": true, "peerDependencies": true}],
-    "import/extensions": "off"
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
+    "import/extensions": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-non-null-assertion": "off"
   }
 }

@@ -1,14 +1,21 @@
 import { ReactElement } from "react";
 import Navbar from "./Navbar";
 import Icon from "./Icon";
-import type { iconProps } from "./types";
+import type { itemNavbar } from "./types";
 
-function Header({ url, image, slogan }: iconProps): ReactElement {
+interface props {
+  url: string;
+  image: string;
+  slogan: string;
+  items: itemNavbar[];
+}
+
+function Header({ url, image, slogan, items }: props): ReactElement {
   return (
-    <div className="bg-primary flex justify-around min-h-[4rem] items-center">
+    <header className="bg-circle bg-center bg-fixed bg-cover flex justify-between lg:justify-around px-8 items-center z-50 relative">
       <Icon url={url} image={image} slogan={slogan} />
-      <Navbar />
-    </div>
+      <Navbar list={items} />
+    </header>
   );
 }
 

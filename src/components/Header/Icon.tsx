@@ -1,12 +1,22 @@
 import { ReactElement } from "react";
-import type { iconProps } from "./types";
+import { NavLink } from "react-router-dom";
 
-function Icon({ url, image, slogan }: iconProps): ReactElement {
+interface props {
+  url: string;
+  image: string;
+  slogan: string;
+}
+
+function Icon({ url, image, slogan }: props): ReactElement {
   return (
-    <a href={url} className="flex items-center">
-      <img className="max-w-[8rem]" alt="imagen" src={image} />
-      <p className="font-custom text-xl">{slogan}</p>
-    </a>
+    <NavLink to={url} className="flex items-center">
+      <img
+        className="max-w-[8rem] hover:opacity-60 hover:border border-blue-color rounded-xl transition-all duration-150"
+        alt="imagen"
+        src={image}
+      />
+      <p className="font-custom text-xl max-w-md">{slogan}</p>
+    </NavLink>
   );
 }
 
