@@ -8,7 +8,9 @@ interface props {
 }
 
 function Navbar({ list }: props): ReactElement {
-  const items = list.map((item) => <ItemNavbar key={item.text} item={item} />);
+  const items = list.map((item) => (
+    <ItemNavbar key={`item-navbar-header-${item.text}`} item={item} />
+  ));
 
   const [showDropdown, setShow] = useState(false);
   return (

@@ -13,7 +13,7 @@ function openUrl(url: string) {
 
 function Icons({ icons, title, sizeIcons }: props): ReactElement {
   const list = icons.map((item) => (
-    <li className="mx-2" key={item.image}>
+    <li className="mx-2" key={`icon-footer-${item.image}`}>
       <button
         type="button"
         onClick={() => openUrl(item.url)}

@@ -16,7 +16,7 @@ function ItemNavbar({ item }: props): ReactElement {
     const options = item.dropdown.map((option) => (
       <li
         className="block hover:bg-yellow-color-hover cursor-pointer transition-all duration-150 border-b-[.01rem] border-b- last:border-b-0 hover:underline"
-        key={option.text}
+        key={`option-navbar-header-${option.text}`}
       >
         <NavLink
           to={option.route || "/"}

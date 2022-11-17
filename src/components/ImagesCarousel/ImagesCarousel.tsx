@@ -10,7 +10,7 @@ interface props {
 function ImagesCarousel({ images }: props): ReactElement {
   const listImages = images.map((item) => (
     <img
-      key={item}
+      key={`image-carousel-${item}`}
       src={item}
       alt="imagen-promocional"
       className="w-full h-full object-cover"

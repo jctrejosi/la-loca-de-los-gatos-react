@@ -12,7 +12,10 @@ interface props {
 
 function OptionsBox({ listItems, title, limit }: props): ReactElement {
   const items = listItems.slice(0, limit).map((option) => (
-    <li key={option.id} className="px-8 w-[33%] min-w-[25rem] mb-16">
+    <li
+      key={`item-box-${option.id}`}
+      className="px-8 w-[33%] min-w-[25rem] mb-16"
+    >
       <ItemBox
         id={option.id}
         description={option.description}
