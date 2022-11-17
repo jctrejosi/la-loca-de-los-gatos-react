@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import Navbar from "./Navbar";
 import Icon from "./Icon";
+import "./header.css";
 import type { itemNavbar } from "./types";
 
 interface props {

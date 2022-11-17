@@ -21,7 +21,7 @@ function ImagesCarousel({ images }: props): ReactElement {
       <Carousel
         autoPlay
         infiniteLoop
-        interval={3000}
+        interval={6000}
         transitionTime={1500}
         showStatus={false}
         showThumbs={false}

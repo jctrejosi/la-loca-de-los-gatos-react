@@ -16,17 +16,24 @@ function Navbar({ list }: props): ReactElement {
   return (
     <nav>
       <Bars3Icon
-        className={`h-8 w-8 flex md:hidden cursor-pointer transition-all duration-300 hover:text-custom-color ${
+        className={`h-8 w-8 flex lg:hidden cursor-pointer transition-all duration-300 hover:text-custom-color ${
           showDropdown ? "text-custom-color" : "text-dark-color"
         }`}
         onClick={() => setShow(!showDropdown)}
       />
       <ul
-        className={`flex absolute flex-col w-full items-center max-w-full translate-y-16 right-0 bg-secondary md:translate-y-0
-        top-16 md:top-auto md:right-auto md:bg-[transparent] md:flex md:flex-row md:relative ${
+        className={`flex absolute flex-col w-full items-center max-w-full translate-y-16 right-0 bg-secondary lg:translate-y-0
+        top-16 lg:top-auto lg:right-auto lg:bg-[transparent] lg:flex lg:flex-row lg:relative ${
           showDropdown ? "flex" : "hidden"
         }`}
       >
+        <button
+          type="button"
+          className="text-2xl hover:text-custom-color ml-auto mr-4 flex lg:hidden"
+          onClick={() => setShow(!showDropdown)}
+        >
+          &times;
+        </button>
         {items}
       </ul>
     </nav>

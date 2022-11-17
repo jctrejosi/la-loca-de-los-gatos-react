@@ -31,7 +31,7 @@ function ItemNavbar({ item }: props): ReactElement {
       <div>
         <button
           type="button"
-          className={`flex items-center w-full text-left font-custom font-bold text-lg cursor-pointer transition-all duration-150 hover:text-custom-color hover:underline hover:bg-light-color px-4 py-1 md:py-[4.5rem] ${
+          className={`flex items-center w-full text-left font-custom font-bold text-lg cursor-pointer transition-all duration-150 hover:text-custom-color hover:underline hover:bg-light-color px-4 py-1 lg:py-[4.5rem] ${
             openDropdown ? "bg-light-color text-custom-color underline" : ""
           }`}
           onMouseEnter={() => showDropdown(true)}
@@ -41,7 +41,7 @@ function ItemNavbar({ item }: props): ReactElement {
           <ChevronDownIcon className="h-4 w-4 ml-1" />
         </button>
         <ul
-          className={`relative md:absolute w-full block right-0 overflow-hidden bg-yellow-color transition-all duration-300 rounded-sm ${
+          className={`relative lg:absolute w-full block right-0 overflow-hidden bg-yellow-color transition-all duration-300 rounded-sm ${
             openDropdown ? "max-h-full" : "max-h-0"
           }`}
           onMouseEnter={() => showDropdown(true)}
@@ -55,18 +55,14 @@ function ItemNavbar({ item }: props): ReactElement {
     itemDiv = (
       <NavLink
         to={item.route || "/"}
-        className="font-custom block w-full text-lg font-bold cursor-pointer transition-all duration-150 hover:text-custom-color hover:underline hover:bg-light-color px-4 py-1 md:py-[4.5rem]"
+        className="font-custom block w-full text-lg font-bold cursor-pointer transition-all duration-150 hover:text-custom-color hover:underline hover:bg-light-color px-4 py-1 lg:py-[4.5rem]"
       >
         {item.text}
       </NavLink>
     );
   }
 
-  return (
-    <li className="mx-2 my-1 first:my-0 md:my-0 w-full first:bg-blue-color">
-      {itemDiv}
-    </li>
-  );
+  return <li className="mx-2 my-1 lg:my-0 w-full">{itemDiv}</li>;
 }
 
 export default ItemNavbar;

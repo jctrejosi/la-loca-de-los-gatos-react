@@ -7,6 +7,7 @@ export const logoHeader = logoSvg;
 export const slogan = "la loca de los gatos";
 
 export const navbarlist = [
+  { text: "Accesorios", route: "/accesorios" },
   {
     text: "Adopta",
     dropdown: [
