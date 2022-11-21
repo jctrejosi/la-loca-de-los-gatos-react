@@ -1,7 +1,10 @@
 /* prettier-ignore */
 :root {
+  /* -------------- import fonts ---------------- */
   --main-font:                   Agrandir-Narrow;
   --custom-font:                 Josefin-Slab;
+
+  /* -------------- Colors ---------------- */
 
   --light-color:                 #fff;
   --practically-light-color:     #e6e6e6;
@@ -26,4 +29,27 @@
   --bg-primary:                  #c7b3f2;
   --bg-secondary:                #f2f2f2;
   --bg-glass:                    rgba(242, 242, 242, 0.7);
+
+  /* -------------- Fonts ---------------- */
+
+  --title-base-color:            var(--purple-color);
+  --title-base-font:             2.4rem var(--main-font);
+  --title-base-weight:           bold;
+  --title-base-align:            left;
+
+  --title-inner-color:           var(--purple-color);
+  --title-inner-font:            1.5rem var(--main-font);
+  --title-inner-weight:          500;
+  --title-inner-align:           left;
+
+  --p-color:                     var(--almost-dark-color);
+  --p-font:                      1rem/1.4 var(--main-font);
+  --p-align:                     left;
+
+  /* -------------- Container ---------------- */
+
+  --container-base-width:         120rem;
+  --container-base-padding:       2rem;
+  --container-base-margin:        2rem auto;
+  --container-base-display:       flex;
 }
