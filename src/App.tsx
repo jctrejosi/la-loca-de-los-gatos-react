@@ -3,7 +3,7 @@ import Routes from "./routes";
 
 function App(): ReactElement {
   return (
-    <div className="App">
+    <div>
       <Routes />
     </div>
   );

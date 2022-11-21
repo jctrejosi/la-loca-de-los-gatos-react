@@ -8,7 +8,7 @@ function ItemBox({ description, image, name, id }: item): ReactElement {
       <img
         src={image}
         alt="imagen de mascota"
-        className="w-full object-cover"
+        className="w-full object-cover rounded-lg"
       />
       <h1 className="title-base-inner mt-4">
         {name}
