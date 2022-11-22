@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lalocadelosgatosreac-dev-85221-authRole",
+      "UnauthRoleArn": "arn:aws:iam::500699536318:role/amplify-lalocadelosgatosreac-dev-85221-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::500699536318:role/amplify-lalocadelosgatosreac-dev-85221-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lalocadelosgatosreac-dev-85221-deployment",
+      "UnauthRoleName": "amplify-lalocadelosgatosreac-dev-85221-unauthRole",
+      "StackName": "amplify-lalocadelosgatosreac-dev-85221",
+      "StackId": "arn:aws:cloudformation:us-east-1:500699536318:stack/amplify-lalocadelosgatosreac-dev-85221/e90710c0-6a6c-11ed-97bd-0ab611811a4f",
+      "AmplifyAppId": "d1imbp0v8ask9b"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
