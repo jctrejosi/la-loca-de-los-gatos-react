@@ -45,7 +45,7 @@ module.exports = {
       xl: "1250px",
     },
     backgroundImage: {
-      circle: "url('./src/assets/images/bg-footer.png')",
+      circle: "url('@/assets/images/bg-footer.png')",
     },
   },
 };
