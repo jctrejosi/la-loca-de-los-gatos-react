@@ -48,4 +48,11 @@ export const titleOptionsBox = "Adopta o apadrina uno de estos peluditos";
 
 export const limitOptionsBox = 6;
 
+export const imageUs = "https://dummyimage.com/400x400/522245/fff";
+
+export const paragraphUs =
+  "Lorem asdasd afasdf asdfsafd asdfasdf asdfasd fasdfas dfasdfkasdbfabf adhafdsad fadfasdf asdfasdf asdfadsfads fasdf asdf asdf asdf asdf asdfaasd fas";
+
+export const titleUs = "Sobre nosotros";
+
 export default null;

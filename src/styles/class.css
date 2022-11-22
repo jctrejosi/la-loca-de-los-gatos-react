@@ -1,3 +1,13 @@
+/* ------------- Container ------------- */
+
+.container-base {
+  display: var(--container-base-display);
+  margin: var(--container-base-margin);
+  max-width: var(--container-base-width);
+  padding: var(--container-base-padding);
+  width: 100%;
+}
+
 /* ------------- Buttons ------------- */
 
 .btn-secondary {
@@ -33,11 +43,11 @@
 /* ------------- Texts ------------- */
 
 .title-base {
-  color: var(--purple-color);
-  font: 1.6rem var(--main-font);
-  font-weight: bold;
-  text-align: left;
-  text-transform: lowercase;
+  color: var(--title-base-color);
+  font: var(--title-base-font);
+  font-weight: var(--title-base-weight);
+  text-align: var(--title-base-align);
+  text-transform: inherit;
 }
 
 .title-base::first-letter {
@@ -45,11 +55,11 @@
 }
 
 .title-base-inner {
-  color: var(--purple-color);
-  font: 1.2rem var(--main-font);
-  font-weight: 600;
-  text-align: left;
-  text-transform: lowercase;
+  color: var(--title-inner-color);
+  font: var(--title-inner-font);
+  font-weight: var(--title-inner-weight);
+  text-align: var(--title-inner-align);
+  text-transform: inherit;
 }
 
 .title-base-inner::first-letter {
@@ -57,9 +67,9 @@
 }
 
 .p-base {
-  color: var(--almost-dark-color);
-  font: 1rem/1.4 var(--main-font);
-  text-align: left;
+  color: var(--p-color);
+  font: var(--p-font);
+  text-align: var(--p-align);
   text-transform: lowercase;
 }
 

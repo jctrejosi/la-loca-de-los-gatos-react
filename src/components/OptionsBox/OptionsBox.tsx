@@ -25,7 +25,7 @@ function OptionsBox({ listItems, title, limit }: props): ReactElement {
     </li>
   ));
   return (
-    <div className="max-w-[100rem] mx-auto my-16 text-center">
+    <div className="container-base flex-wrap justify-center text-center">
       <h1 className="title-base w-full text-center mb-8">{title}</h1>
       <ul className="flex justify-center flex-wrap">{items}</ul>
       <NavLink to="/adopciones" className="link-default">
