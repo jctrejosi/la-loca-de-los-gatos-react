@@ -1,6 +1,6 @@
 import logoSvg from "../assets/images/logo.svg";
 import instagramSvg from "../assets/images/instagram.svg";
-import perrosygatos from "../assets/images/como_perrros_y_gatos.svg";
+import perrosygatos from "../assets/images/como_perros_y_gatos.svg";
 
 export const listLinks = [
   { text: "Política de protección de datos", route: "/politica-privacidad" },
